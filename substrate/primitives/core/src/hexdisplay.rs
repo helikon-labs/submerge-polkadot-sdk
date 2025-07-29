@@ -29,18 +29,8 @@ impl<'a> HexDisplay<'a> {
 
 impl<'a> core::fmt::Display for HexDisplay<'a> {
 	fn fmt(&self, f: &mut core::fmt::Formatter) -> Result<(), core::fmt::Error> {
-		if self.0.len() < 1027 {
-			for byte in self.0 {
-				f.write_fmt(format_args!("{:02x}", byte))?;
-			}
-		} else {
-			for byte in &self.0[0..512] {
-				f.write_fmt(format_args!("{:02x}", byte))?;
-			}
-			f.write_str("...")?;
-			for byte in &self.0[self.0.len() - 512..] {
-				f.write_fmt(format_args!("{:02x}", byte))?;
-			}
+		for byte in self.0 {
+			f.write_fmt(format_args!("{:02x}", byte))?;
 		}
 		Ok(())
 	}
