@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753740328418,
+  "lastUpdate": 1753797155939,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "availability-recovery-regression-bench": [
@@ -65727,6 +65727,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "availability-recovery",
             "value": 11.347341198666665,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "82968568+miloskriz@users.noreply.github.com",
+            "name": "Milos Kriz",
+            "username": "miloskriz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d55dc56df31a9f4fdd59ca7ca06f2a8b00ad808b",
+          "message": "Maintenance of bootnodes for `westend` and related chains (#9353)\n\n# Description\n\nPlease consider this Pull Request to remove the bootnodes provided by\nGatotech to the following relaychain and systemchains:\n\n- `westend`\n  - `asset-hub-westend`\n  - `bridge-hub-westend`\n  - `collectives-westend`\n  - `coretime-westend`\n  - `people-westend`\n\nThis removal responds to the discontinuation of support by the\nInfrastructure Builders' Programme of Westend in favour of enhanced\nsupport to the Paseo testnet.\n\nAfter this PR is merged, we will proceed to decommission the relevant\nnodes..\n\nMany thanks!!\n\nBest regards\n\n**_Milos_**\n\nCo-authored-by: Bastian Köcher <git@kchr.de>",
+          "timestamp": "2025-07-29T12:39:54Z",
+          "tree_id": "5e96d7613fc4bd03f97b864271e24e4e0bc984db",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/d55dc56df31a9f4fdd59ca7ca06f2a8b00ad808b"
+        },
+        "date": 1753797138765,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Sent to peers",
+            "value": 1.6666666666666665,
+            "unit": "KiB"
+          },
+          {
+            "name": "Received from peers",
+            "value": 307203,
+            "unit": "KiB"
+          },
+          {
+            "name": "availability-recovery",
+            "value": 11.263417623499999,
+            "unit": "seconds"
+          },
+          {
+            "name": "test-environment",
+            "value": 0.20211050753333332,
             "unit": "seconds"
           }
         ]
