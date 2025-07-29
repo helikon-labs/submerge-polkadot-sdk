@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753740354057,
+  "lastUpdate": 1753797181307,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "availability-distribution-regression-bench": [
@@ -81079,6 +81079,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "bitfield-distribution",
             "value": 0.02223492379333333,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "82968568+miloskriz@users.noreply.github.com",
+            "name": "Milos Kriz",
+            "username": "miloskriz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d55dc56df31a9f4fdd59ca7ca06f2a8b00ad808b",
+          "message": "Maintenance of bootnodes for `westend` and related chains (#9353)\n\n# Description\n\nPlease consider this Pull Request to remove the bootnodes provided by\nGatotech to the following relaychain and systemchains:\n\n- `westend`\n  - `asset-hub-westend`\n  - `bridge-hub-westend`\n  - `collectives-westend`\n  - `coretime-westend`\n  - `people-westend`\n\nThis removal responds to the discontinuation of support by the\nInfrastructure Builders' Programme of Westend in favour of enhanced\nsupport to the Paseo testnet.\n\nAfter this PR is merged, we will proceed to decommission the relevant\nnodes..\n\nMany thanks!!\n\nBest regards\n\n**_Milos_**\n\nCo-authored-by: Bastian Köcher <git@kchr.de>",
+          "timestamp": "2025-07-29T12:39:54Z",
+          "tree_id": "5e96d7613fc4bd03f97b864271e24e4e0bc984db",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/d55dc56df31a9f4fdd59ca7ca06f2a8b00ad808b"
+        },
+        "date": 1753797163824,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Received from peers",
+            "value": 433.3333333333332,
+            "unit": "KiB"
+          },
+          {
+            "name": "Sent to peers",
+            "value": 18481.666666666653,
+            "unit": "KiB"
+          },
+          {
+            "name": "bitfield-distribution",
+            "value": 0.022532667319999998,
+            "unit": "seconds"
+          },
+          {
+            "name": "availability-store",
+            "value": 0.15786893300000007,
+            "unit": "seconds"
+          },
+          {
+            "name": "test-environment",
+            "value": 0.0071946026399999745,
+            "unit": "seconds"
+          },
+          {
+            "name": "availability-distribution",
+            "value": 0.013313194993333333,
             "unit": "seconds"
           }
         ]
